@@ -17,29 +17,12 @@ It includes:
 
 ---
 
-## 📁 Project Structure
-
-📦BERT-Spam-Detector
-├── app.py # Streamlit frontend
-├── requirements.txt # Dependencies
-├── email.csv # Dataset (from Kaggle)
-├── bert_spam_model/ # Fine-tuned BERT model
-│ ├── config.json
-│ ├── model.safetensors
-│ ├── tokenizer_config.json
-│ ├── vocab.txt
-├── spam_detection.ipynb # Jupyter notebook for training
-└── .gitattributes # For Git LFS
-
-
-
----
 
 ## 🧠 Model Details
 
 - **Model Base**: `bert-base-uncased`
 - **Task**: Binary classification (`ham = 0`, `spam = 1`)
-- **Dataset**: [Kaggle Email Spam Dataset](https://www.kaggle.com/datasets/uciml/sms-spam-collection-dataset)
+- **Dataset**: [Kaggle Email Spam Dataset]([https://www.kaggle.com/datasets/uciml/sms-spam-collection-dataset](https://www.kaggle.com/datasets/ashfakyeafi/spam-email-classification))
 - **Tokenizer**: HuggingFace Tokenizer
 - **Training Framework**: HuggingFace Transformers with PyTorch backend
 - **Frontend**: Streamlit with dark theme applied to input area
